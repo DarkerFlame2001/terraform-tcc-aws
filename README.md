@@ -57,12 +57,11 @@
 
 #### Clonando o Repositório
 
-```bash
 git clone https://github.com/seu-usuario/contador-acessos.git
 cd contador-acessos
 code .
 Configurando Credenciais AWS
-bash
+
 # Configure suas credenciais AWS
 aws configure
 
@@ -75,7 +74,7 @@ aws configure
 # Verifique se está configurado corretamente
 aws sts get-caller-identity
 Inicializando o Terraform
-bash
+
 # Instale os providers necessários
 terraform init
 
@@ -92,7 +91,7 @@ terraform apply
 # Digite "yes" quando confirmar
 🖥️ Iniciando a Aplicação
 Acessando o Site
-bash
+
 # Após o deploy, obtenha a URL do CloudFront
 terraform output cloudfront_url
 
@@ -101,7 +100,7 @@ terraform output cloudfront_url
 Abra a URL no seu navegador para ver o contador em ação! 🎉
 
 Testando a API
-bash
+
 # Incrementar o contador (POST)
 curl -X POST $(terraform output -raw contador_url_post)
 
@@ -265,15 +264,12 @@ Fork o projeto
 
 Crie uma branch para sua feature
 
-bash
 git checkout -b feature/nova-feature
 Commit suas mudanças
 
-bash
 git commit -m 'Adiciona nova feature'
 Push para a branch
 
-bash
 git push origin feature/nova-feature
 Abra um Pull Request
 
